@@ -1,0 +1,87 @@
+:root{
+    --bg-color:#ffffff;
+    --text-color:#000000;
+    --text-font:'Montserrat', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body,form,footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+
+body{
+    background-color:var(--bg-color);
+    font-family: var(--text-font);
+    color:var(--text-color);
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title, input, .imcResult, footer{
+    text-align:center;
+}
+
+.title{
+    margin: 2em 0;
+}
+
+input, label{
+    margin-top: 0.7em;
+    width: 80%;
+}
+
+input{
+    font-size: 18px;
+    padding: 0.5em 0;
+    outline: unset;
+}
+
+input::placeholder{
+    font-size: 14px;
+    text-align: start;
+    padding: 0 1em;
+}
+
+.label{
+    align-self: flex-start;
+}
+
+.imcResult{
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5em 2.5em;
+}
+
+#submit{
+    background-color: var(--text-color);
+    padding: 1.5em 0;
+    width: 70%;
+    margin-top: 2em;
+    color: var(--bg-color);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+}
+
+footer{
+    height: 70px;
+    background-color: var(--text-color);
+    width: 100%;
+    color: var(--bg-color);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
